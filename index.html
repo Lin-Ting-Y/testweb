@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Plan for HW1-1: Linear Regression with Streamlit</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+      color: #24292e;
+      background-color: #fff;
+    }
+    h1, h2, h3, h4 {
+      font-weight: 600;
+      margin-top: 1.5rem;
+    }
+    code {
+      background-color: #f6f8fa;
+      padding: 0.2em 0.4em;
+      border-radius: 6px;
+      font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 85%;
+    }
+    pre {
+      background-color: #f6f8fa;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    blockquote {
+      color: #6a737d;
+      border-left: 0.25em solid #dfe2e5;
+      padding-left: 1em;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .math {
+      font-family: "Times New Roman", Times, serif;
+      font-style: italic;
+      display: block;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Project Plan for HW1-1: Linear Regression with Streamlit</h1>
+
+  <h2>HW1-1: Interactive Linear Regression Visualizer</h2>
+
+  <h3>Features</h3>
+
+  <h4>Data Generation</h4>
+  <ul>
+    <li>Generate <strong>n</strong> data points (x, y) where <strong>n</strong> is a user-selectable value between 100 and 1000.</li>
+    <li>The relationship between x and y will be defined by:</li>
+  </ul>
+  <div class="math">
+    y = a x + b + noise
+  </div>
+  <ul>
+    <li><strong>a</strong>: User-selectable coefficient between -10 and 10.</li>
+    <li><strong>noise</strong>: Normally distributed noise N(0, var), where <strong>var</strong> (variance) is user-selectable between 0 and 1000.</li>
+  </ul>
+
+  <h4>Linear Regression Visualization</h4>
+  <ul>
+    <li>Plot the generated data points.</li>
+    <li>Draw the calculated linear regression line in <strong>red</strong>.</li>
+  </ul>
+
+  <h4>Outlier Identification</h4>
+  <ul>
+    <li>Identify and label the top 5 outliers (points furthest from the regression line).</li>
+  </ul>
+
+  <h4>User Interface</h4>
+  <ul>
+    <li>Implement the application using <strong>Streamlit</strong> for an interactive web interface.</li>
+    <li>Allow users to adjust parameters (<strong>n</strong>, <strong>a</strong>, <strong>var</strong>) via sliders or input fields.</li>
+    <li>Display the generated plot and regression results.</li>
+  </ul>
+</body>
+</html>
